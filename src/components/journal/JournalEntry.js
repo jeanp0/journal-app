@@ -1,6 +1,6 @@
 import React from "react";
 
-export const JournalEntry = ({}) => {
+export const JournalEntry = () => {
   return (
     <div className="journal__entry">
       <div
