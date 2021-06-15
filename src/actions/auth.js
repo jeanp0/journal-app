@@ -6,7 +6,7 @@ export const startLoginWithEmailPassword = (email, password) => {
   // thunk ofrece el dispath(?)
   return (dispatch) => {
     setTimeout(() => {
-      dispatch(login(123, "Jeanpier"));
+      dispatch(getLogin(123, "Jeanpier"));
     }, 3500);
   };
 };
@@ -18,12 +18,12 @@ export const startGoogleLogin = () => {
       .signInWithPopup(googleAuthProvider)
       .then(({ user }) => {
         const { uid, displayName } = user;
-        dispatch(login(uid, displayName));
+        dispatch(getLogin(uid, displayName));
       });
   };
 };
 
-export const login = (uid, displayName) => ({
+export const getLogin = (uid, displayName) => ({
   type: types.login,
   payload: { uid, displayName },
 });
