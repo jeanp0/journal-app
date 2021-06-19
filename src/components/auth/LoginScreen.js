@@ -5,6 +5,7 @@ import {
   startGoogleLogin,
   startLoginWithEmailPassword,
 } from "../../actions/auth";
+import { registerAuthRoute } from "../../helpers/routes";
 import { useForm } from "../../hooks/useForm";
 
 export const LoginScreen = () => {
@@ -74,7 +75,7 @@ export const LoginScreen = () => {
             </p>
           </div>
         </div>
-        <Link className="link" to="/auth/register">
+        <Link className="link" to={registerAuthRoute}>
           Create new account
         </Link>
       </form>

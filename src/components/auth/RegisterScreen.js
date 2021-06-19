@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import validator from "validator";
 import { startRegisterWithEmailPasswordName } from "../../actions/auth";
 import { removeError, setError } from "../../actions/ui";
+import { loginAuthRoute } from "../../helpers/routes";
 import { useForm } from "../../hooks/useForm";
 import {
   isNotValid,
@@ -99,7 +100,7 @@ export const RegisterScreen = () => {
           Register
         </button>
 
-        <Link className="link" to="/auth/login">
+        <Link className="link" to={loginAuthRoute}>
           Already register?
         </Link>
       </form>
