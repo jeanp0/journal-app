@@ -8,8 +8,11 @@ export const fileUpload = async (file) => {
       method: "POST",
       body: formData,
     });
-    const cloudResponse = await response.json();
-    return cloudResponse.secure_url;
+    if (response.ok) {
+      const cloudResponse = await response.json();
+      return cloudResponse.secure_url;
+    }
+    throw await response.json();
   } catch (err) {
     throw err;
   }

@@ -2,6 +2,7 @@ import { types } from "../components/types/types";
 import { firebase, googleAuthProvider } from "../firebase/firebase.config";
 import { finishLoading, startLoading } from "./ui";
 import Swal from "sweetalert2";
+import { cleanNotesLogout } from "./notes";
 
 // acción que hace de middleware
 export const startLoginWithEmailPassword = (email, password) => {
@@ -64,6 +65,7 @@ export const startLogout = () => {
       .signOut()
       .then(() => {
         dispatch(logout());
+        dispatch(cleanNotesLogout());
       });
   };
 };
