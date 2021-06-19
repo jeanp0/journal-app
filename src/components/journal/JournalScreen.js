@@ -7,7 +7,10 @@ import { Sidebar } from "./Sidebar";
 export const JournalScreen = () => {
   const { active } = useSelector((state) => state.notes);
   return (
-    <div className="journal__main-content">
+    <div
+      className="journal__main-content"
+      style={{ backgroundColor: "#5c62c5" }}
+    >
       <Sidebar />
       <main>{active ? <NoteScreen /> : <NothingSelectedScreen />}</main>
     </div>

@@ -33,9 +33,9 @@ export const NoteScreen = () => {
   };
 
   return (
-    <div className="notes__main-content">
+    <div className="notes__main-content" style={{ backgroundColor: "#fff" }}>
       <NotesAppBar />
-      <div className="notes__content">
+      <div className="notes__content animate__animated animate__fadeIn animate__animated">
         <input
           type="text"
           name="title"
