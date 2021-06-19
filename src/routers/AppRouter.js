@@ -7,6 +7,7 @@ import { JournalScreen } from "../components/journal/JournalScreen";
 import { AuthRouter } from "./AuthRouter";
 import { useDispatch } from "react-redux";
 import { login } from "../actions/auth";
+import { startLoadingNotes } from "../actions/notes";
 
 export const AppRouter = () => {
   const dispatch = useDispatch();
@@ -15,7 +16,7 @@ export const AppRouter = () => {
 
   useEffect(() => {
     // observable
-    firebase.auth().onAuthStateChanged((user) => {
+    firebase.auth().onAuthStateChanged(async (user) => {
       if (!user?.uid) {
         setIsAuthenticated(false);
         setChecking(false);
@@ -24,6 +25,7 @@ export const AppRouter = () => {
       // preserva el state del auth con la acción login
       dispatch(login(user.uid, user.displayName));
       setIsAuthenticated(true);
+      dispatch(startLoadingNotes(user.uid));
       setChecking(false);
     });
   }, [dispatch, setChecking, setIsAuthenticated]);

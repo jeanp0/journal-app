@@ -1,6 +1,6 @@
 import React from "react";
 
-export const NothingSelected = () => {
+export const NothingSelectedScreen = () => {
   return (
     <div className="nothing__main-content">
       <p>
