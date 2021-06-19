@@ -78,7 +78,6 @@ export const startUploading = (file) => {
     Swal.close();
     activeNote.url = fileUrl;
     dispatch(startSaveNote(activeNote));
-    console.log(fileUrl);
   };
 };
 

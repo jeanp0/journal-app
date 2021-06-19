@@ -1,7 +1,7 @@
 import React from "react";
 import { Redirect, Route } from "react-router";
 import PropTypes from "prop-types";
-import { baseAuthRoute, rootRoute } from "../helpers/routes";
+import { rootRoute } from "../helpers/routes";
 
 export const PublicRoute = ({
   isAuthenticated,

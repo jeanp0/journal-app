@@ -34,7 +34,7 @@ export const NoteScreen = () => {
 
   return (
     <div className="notes__main-content" style={{ backgroundColor: "#fff" }}>
-      <NotesAppBar />
+      <NotesAppBar noteDate={note.date} />
       <div className="notes__content animate__animated animate__fadeIn animate__animated">
         <input
           type="text"

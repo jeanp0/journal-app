@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/journal-app/static/css/main.11da46ca.chunk.css",
-    "main.js": "/journal-app/static/js/main.868b70c8.chunk.js",
-    "main.js.map": "/journal-app/static/js/main.868b70c8.chunk.js.map",
+    "main.js": "/journal-app/static/js/main.d5ca3e3b.chunk.js",
+    "main.js.map": "/journal-app/static/js/main.d5ca3e3b.chunk.js.map",
     "runtime-main.js": "/journal-app/static/js/runtime-main.b525af0d.js",
     "runtime-main.js.map": "/journal-app/static/js/runtime-main.b525af0d.js.map",
-    "static/js/2.4047b8cd.chunk.js": "/journal-app/static/js/2.4047b8cd.chunk.js",
-    "static/js/2.4047b8cd.chunk.js.map": "/journal-app/static/js/2.4047b8cd.chunk.js.map",
+    "static/js/2.74a26204.chunk.js": "/journal-app/static/js/2.74a26204.chunk.js",
+    "static/js/2.74a26204.chunk.js.map": "/journal-app/static/js/2.74a26204.chunk.js.map",
     "index.html": "/journal-app/index.html",
     "static/css/main.11da46ca.chunk.css.map": "/journal-app/static/css/main.11da46ca.chunk.css.map",
-    "static/js/2.4047b8cd.chunk.js.LICENSE.txt": "/journal-app/static/js/2.4047b8cd.chunk.js.LICENSE.txt"
+    "static/js/2.74a26204.chunk.js.LICENSE.txt": "/journal-app/static/js/2.74a26204.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b525af0d.js",
-    "static/js/2.4047b8cd.chunk.js",
+    "static/js/2.74a26204.chunk.js",
     "static/css/main.11da46ca.chunk.css",
-    "static/js/main.868b70c8.chunk.js"
+    "static/js/main.d5ca3e3b.chunk.js"
   ]
 }
